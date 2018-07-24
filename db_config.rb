@@ -5,4 +5,4 @@ options = {
 	database: 'murder_mystery'
 }
 
-ActiveRecord::Base.establish_connection(options)
+ActiveRecord::Base.establish_connection(options) 

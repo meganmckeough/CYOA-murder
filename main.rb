@@ -6,6 +6,7 @@ require 'bcrypt'
 require_relative 'db_config'
 
 require_relative 'models/user'
+require_relative 'models/character'
 
 get '/login' do
 	erb :login
@@ -17,6 +18,14 @@ end
 
 get '/' do
   	erb :index
+end
+
+get '/character' do
+	erb :character
+end
+
+get '/about' do
+	erb :about
 end
 
 enable :sessions
@@ -37,6 +46,14 @@ post '/register/new' do
 	user.email = params[:email]
 	user.password = params[:password]
 	user.save
+	redirect '/character'
+end
+
+post '/character/new' do
+	character = Character.new
+	character.name = params[:name]
+	character.background = params[:background]
+	character.save
 	redirect '/'
 end
 
@@ -52,5 +69,5 @@ end
 
 delete '/session' do
 	session[:user_id] = nil
-	redirect '/login'
+	redirect '/'
 end

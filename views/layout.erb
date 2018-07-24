@@ -4,23 +4,33 @@
   <meta charset="UTF-8">
   <title>Choose Your Own Murder Mystery</title>
   <link rel='stylesheet' href='/stylesheets/main.css'>
-  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One|Nunito" rel="stylesheet">
 </head>
 <body>
 
-	<% if logged_in? %>
-		Currently playing as <%= current_user.name %>
-		<form action="/session" method="post">
-	  	<input type="hidden" name="_method" value="delete">
-	  	<button>Logout</button>
-	  	</form>
-  	<% end %>
+	<% if logged_in? == false %>
+		<div class="login">
+			<a href="/login">Login.</a>
+			<a href="/register">Create a new account.</a>
+		</div>
+	<% end %>
 
+	<% if logged_in? %>
+		<div class="login">
+			Currently playing as <%= current_user.name %>
+			<form action="/session" method="post">
+		  		<input type="hidden" name="_method" value="delete">
+		  		<button>Logout</button>
+		  	</form>
+		  </div>
+  	<% end %>
+  
   <%= yield %>
 
-	<footer>
+
+<!-- 	<footer>
 	  	Written and built by Megan McKeough 2018
-	</footer>
+	</footer> -->
 
 </body>
 </html>

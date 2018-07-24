@@ -1,5 +1,127 @@
 body {
 	background-color: #010D18;
-	font-family: 'Poiret One', cursive;
+	font-family: 'Poiret One', sans-serif;
+	font-size: 24px;
 	color: white;
 }
+
+.story-text {
+	font-family: 'Nunito', sans-serif;
+}
+
+main {
+	height: 60vh;
+}
+
+header {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+}
+
+.intro {
+	margin: 0 auto;
+	width: 50%;
+	background-color: white;
+	color:  #010D18;
+	padding: 40px;
+}
+
+.about {
+	text-align: center;
+	margin: 150px 100px;
+}
+
+.about a {
+	text-decoration: underline;
+}
+
+.about a:hover {
+	color: #7a2828;
+}
+
+.login {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+	font-size: 0.7em;
+}
+
+.login-form,
+.register-form {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	margin: 0 auto;
+	padding: 100px;
+}
+
+.character form {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	margin: 0 auto;
+	padding: 100px;
+}
+
+.character div {
+	text-align: center;
+}
+
+label {
+	margin: 20px;
+}
+
+input {
+	font-size: 1em;
+}
+
+button {
+	padding: 0.3em 0.5em;
+	font-size: 1em;
+	background-color: white;
+	color:  #010D18;
+	border-radius: 4px;
+	font-family: 'Poiret One', sans-serif;
+	margin-top: 5px;
+}
+
+button:hover {
+	background-color: #7a2828;
+	border-color: #7a2828;
+	font-style: bold;
+	color: white;
+}
+
+.large-button {
+	margin: 0 auto;
+	width: 50%;
+	text-align: center;
+	text-decoration: none;
+	padding: 30px;
+}	
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+footer {
+	background-color: white;
+	color:   #010D18;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+	font-size: 0.8em;
+}
+
