@@ -19,7 +19,7 @@ body {
 }*/
 
 main {
-	height: 60vh;
+	height: 65vh;
 }
 
 header {
@@ -68,12 +68,22 @@ nav {
 
 .login-form,
 .register-form,
-.character form {
+.character form,
+.enter {
 	display: flex;
 	flex-direction: column;
 	width: 40%;
 	margin: 0 auto;
 	padding: 100px;
+}
+
+.login-form a {
+	text-decoration: underline;
+}
+
+.enter {
+	text-align: center;
+	font-size: 1.6em;
 }
 
 .character div,
@@ -145,3 +155,7 @@ footer {
 	font-size: 0.8em;
 }
 
+.story {
+	display: flex;
+	flex-direction: row;
+}

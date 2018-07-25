@@ -18,3 +18,9 @@ CREATE TABLE characters (
 INSERT INTO users (name, email, password) values ('megan', 'megan.mckeough@gmail.com', 'pudding');
 
 UPDATE users SET password = 'pudding' WHERE id = 1;
+
+ALTER TABLE characters ADD created_at TIMESTAMP;
+
+ALTER TABLE characters DROP created_at;
+
+ALTER TABLE characters ADD created_at TIMESTAMP NOT NULL DEFAULT NOW();

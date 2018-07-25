@@ -29,10 +29,6 @@ get '/about' do
 	erb :about
 end
 
-get '/story' do
-	erb :story
-end
-
 enable :sessions
 
 helpers do 
@@ -62,15 +58,25 @@ post '/character/new' do
 end
 
 get '/character/edit' do
-	@character = Character.last
+	@character = Character.order(:created_at).last
 	erb :background
+end
+
+get '/enter' do
+	@character = Character.order(:created_at).last
+	erb :enter
+end
+
+get '/segments' do
+	@character = Character.order(:created_at).last
+	erb :segments
 end
 
 put '/character/:id/edit' do
 	character = Character.find(params[:id])
 	character.background = params[:background]
 	character.save
-	redirect "/story"
+	redirect "/enter"
 end
 
 post '/session' do
@@ -87,3 +93,4 @@ delete '/session' do
 	session[:user_id] = nil
 	redirect '/'
 end
+
