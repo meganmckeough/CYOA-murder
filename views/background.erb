@@ -1,0 +1,36 @@
+<section class="mini-header">
+	<nav>
+		<a href="/about">About</a>
+		<a href="/">Home</a>
+	</nav>	
+</section>
+
+<section class="background">
+
+	<form action="/character/<%= @character.id %>/edit" method="post">
+		<input type="hidden" name="_method" value="put">
+		<div>Excellent, nice to meet you Detective <%= @character.name %>!</div>
+		
+		<div>What kind of detective are you?</div>
+
+		<div>
+			<p>1. You're an old army general with a tough as nails exterior but a heart of gold.</p>
+			<p>2. You're a pompous and portly Englishman with perfect manners and a sixth sense for deceit.</p>
+			<p>3. Old school marm? Not you! You may be grey haired but you love to kick ass and solve crime.</p>
+			<p>4. You're a smart and ambitious young detective determined to prove herself and rise up the ranks as quickly as possible.</p>
+		</div>
+
+		
+		<div class="button-wrapper">
+			Which background would you like?
+			<button name="background" value="Wizened old army general with heart of gold.">Wizened old army general with heart of gold.</button>
+			<button name="background" value="Gentleman sleuth with a penchant for danger.">Gentleman sleuth with a penchant for danger.</button>
+			<button name="background" value="Street smarts and sass in a geriatric package.">Street smarts and sass in a geriatric package.</button>
+			<button name="background" value="Slytherin-inclined gumshoe with the necessary wits.">Slytherin-inclined gumshoe with the necessary wits.</button>
+		</div>
+	</form>
+
+</section>
+
+
+

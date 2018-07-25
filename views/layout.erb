@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Choose Your Own Murder Mystery</title>
   <link rel='stylesheet' href='/stylesheets/main.css'>
-  <link href="https://fonts.googleapis.com/css?family=Poiret+One|Nunito" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One|Josefin+Slab" rel="stylesheet">
 </head>
 <body>
 
@@ -16,10 +16,10 @@
 	<% end %>
 
 	<% if logged_in? %>
-		<div class="login">
-			Currently playing as <%= current_user.name %>
+		<div class="logged-in">
 			<form action="/session" method="post">
 		  		<input type="hidden" name="_method" value="delete">
+		  		Currently investigating as <%= current_user.name %>
 		  		<button>Logout</button>
 		  	</form>
 		  </div>

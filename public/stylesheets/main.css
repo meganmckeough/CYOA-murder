@@ -6,8 +6,17 @@ body {
 }
 
 .story-text {
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Josefin Slab', serif;
+	line-height: 1.5em;
+	font-size: 1.2em;
 }
+
+/*.frame-wrapper {
+	background-image: url("/images/frame.png");
+	background-size: contain;
+	height: 300px;
+	width: 450px;
+}*/
 
 main {
 	height: 60vh;
@@ -28,9 +37,7 @@ nav {
 .intro {
 	margin: 0 auto;
 	width: 50%;
-	background-color: white;
-	color:  #010D18;
-	padding: 40px;
+	padding: 20px;
 }
 
 .about {
@@ -46,22 +53,21 @@ nav {
 	color: #7a2828;
 }
 
+.logged-in {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	font-size: 0.7em;
+}
+
 .login {
 	display: flex;
 	flex-direction: column;
 	text-align: right;
-	font-size: 0.7em;
 }
 
 .login-form,
-.register-form {
-	display: flex;
-	flex-direction: column;
-	width: 40%;
-	margin: 0 auto;
-	padding: 100px;
-}
-
+.register-form,
 .character form {
 	display: flex;
 	flex-direction: column;
@@ -70,8 +76,22 @@ nav {
 	padding: 100px;
 }
 
-.character div {
+.character div,
+.background {
 	text-align: center;
+}
+
+.background p {
+	margin-bottom: 0;
+	font-family: 'Josefin Slab', serif;
+}
+
+.button-wrapper {
+	display: flex;
+	flex-direction: column;
+	padding-top: 20px;
+	width: 50%;
+	margin: 0 auto;
 }
 
 label {
@@ -84,10 +104,10 @@ input {
 
 button {
 	padding: 0.3em 0.5em;
-	font-size: 1em;
+	font-size: 0.8em;
 	background-color: white;
 	color:  #010D18;
-	border-radius: 4px;
+	border-radius: 3px;
 	font-family: 'Poiret One', sans-serif;
 	margin-top: 5px;
 }
