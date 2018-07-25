@@ -14,7 +14,10 @@
 	</aside>
 
 	<section>
-		<p class="story-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto minima quidem, aspernatur cumque quam, voluptatem illum. Reprehenderit blanditiis sit, ipsa, autem amet, inventore atque nostrum dolor id placeat rerum. Dolores?</p>
+		<p class="story-text"><%= @segment.content %></p>
+		<% @segment.options.each do |option| %>
+			<a href="/segments/<%= option[1] %>"><%= option[0] %></a>
+		<% end %>
 	</section>
 
 </main>

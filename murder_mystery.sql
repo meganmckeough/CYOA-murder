@@ -33,4 +33,3 @@ CREATE TABLE segments (
 );
 
 
-INSERT INTO segments (story_id, content, options) values ('1', 'test content 1', );

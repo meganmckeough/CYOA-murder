@@ -1,0 +1,105 @@
+Once in the foyer, it is eerily quiet, for the scene of a murder. There is a small side table by the door with a large black telephone on it, and a pair of folded round eyeglasses, resting on a silver drinks tray. Your phone number is scrawled on the notepad by the phone - presumably written by the person who phoned you here. To the right, an open door leads to a brightly lit dining room. [[You enter the dining room.]]
+
+story_id = 1</tw-passagedata><tw-passagedata pid="3" name="You enter the dining room." tags="" position="501,749.5" size="100,100">Once inside, you notice the table set for dinner. Or rather, it was. Dishes are cracked, glasses askew, and part of the decadent meal is on the floor.
+No one is around.
+Well, there is somebody. A dead body. Next to the remains of what looks like a delicious soup, are the bodily remains of a finely dressed gentleman with glasses. In addition to a rather smart-looking dinner jacket, he is also sporting what looks like several stab wounds to the chest.
+You know that the victim is also owner of the mansion, multimillionaire and host of the dinner party. He has met his untimely death at the hands of one of someone in the mansion, no doubt. You peer back down at the body.
+You can either [[take his nice looking silver pocket watch]] or [[examine the stab wounds]].
+
+story_id = 2</tw-passagedata><tw-passagedata pid="4" name="take his nice looking silver pocket watch" tags="" position="198,799.5" size="100,100">I thought you were a detective, not a thief? Regardless, you pocket the nice trinket and then proceed to do your real job, and [[examine the stab wounds]].
+
+story_id = 3</tw-passagedata><tw-passagedata pid="5" name="examine the stab wounds" tags="" position="328,900.5" size="100,100">You lean in close as a crack of thunder splits the sky. This body is pretty fresh, actually, which is a relief. The stab wounds look to have been made by a long, thin (and obviously sharp) object, which is nowhere to be found in the dining room itself. You wonder about what led to this fellow&#39;s demise... but the task at hand is to find the killer, not unpack his life history. You know that some of the dinner guests are congregated in the next room over, a small sitting room. You can either [[go into the sitting room]], [[empty out his pockets]] or [[head back to the foyer]].
+
+story_id = 4</tw-passagedata><tw-passagedata pid="6" name="go into the sitting room" tags="" position="602,898.5" size="100,100">You enter the sitting room. There is a small huddled group of guests assembled there, dressed in finery and looking put out by the thoroughly inconvenient murder. If you want, you can [[talk to the guests]] to learn more, or simply [[search the room for clues]].
+
+story_id = 6</tw-passagedata><tw-passagedata pid="7" name="head back to the foyer" tags="" position="635,783.5" size="100,100">Now that you are back in the foyer, you can either [[leave the house]] or [[head for the stairs]].
+
+story_id = 7</tw-passagedata><tw-passagedata pid="8" name="leave the house" tags="" position="599,600.5" size="100,100">Really? Fair enough. Too afraid to go on, you don&#39;t solve the murder, and you get the award for Biggest Chicken. Whistling a tune, you head to the nearest tavern while assuming that everyone in the mansion will meet some horrible fate without you.
+
+story_id = 8</tw-passagedata><tw-passagedata pid="9" name="head for the stairs" tags="" position="876,900.5" size="100,100">With the chandelier towering above your head, you ascend the grand staircase to look upstairs. As you do, something catches your eye - several drops of blood on one of the stairs. You lean in close. Odd. The blood is still fresh....
+You can either keep going and [[enter the first bedroom]] or [[examine the stairs]] more.
+
+story_id = 16</tw-passagedata><tw-passagedata pid="10" name="empty out his pockets" tags="" position="302,1100.5" size="100,100">You don&#39;t find anything except some lint. Congratulations.
+You [[go into the sitting room]].
+
+story_id = 5</tw-passagedata><tw-passagedata pid="11" name="talk to the guests" tags="" position="398,1298.5" size="100,100">You look around the room for someone to speak with. They all appear to be accounted for - one guest in the room for each place at the dinner table. They mill about like lost cows in a paddock, but one breaks away and heads towards you. It is an older woman with kind eyes. You [[speak to the woman]].
+
+story_id = 9</tw-passagedata><tw-passagedata pid="12" name="search the room for clues" tags="" position="825,1151.5" size="100,100">Dispensing with any niceties completely, you ignore the guests and begin searching the room using your keen detective senses.
+Would your rather [[open all the drawers in the sidetable]] or [[poke around in the smouldering fireplace]]?
+
+story_id = 12</tw-passagedata><tw-passagedata pid="13" name="open all the drawers in the sidetable" tags="" position="599,1101.5" size="100,100">Great, you&#39;ve further disrupted the guests&#39; already strange evening by making a racket. An older gentleman approaches you as you are tipping the contents of the last drawer onto the ground.
+You can either [[speak to the man]] or push him aside, exit and [[head for the stairs]].
+
+story_id = 13</tw-passagedata><tw-passagedata pid="14" name="poke around in the smouldering fireplace" tags="" position="976,1151.5" size="100,100">With a faceful of dust, you emerge triumphant. There is a partially burned piece of paper in the fireplace - the remains of a letter. It is mostly burned, but you can see one word - that reads &quot;Annabelle&quot;.
+You pocket the letter discreetly and exit the sitting room, leaving the guests milling about in a fitful state. You [[head for the stairs]].
+
+story_id = 15</tw-passagedata><tw-passagedata pid="15" name="folded up piece of paper" tags="" position="701,1299.5" size="100,100">As you unfold it you realise it is actually a photograph. It is of a man and woman, smiling into the camera and holding hands. The man is tall, with dark hair, round eyeglasses and a neat moustache. The woman has blazing red hair and is wearing a beautiful necklace with a shiny pendant on it in the shape of an &quot;A&quot;.
+You turn to address the woman but she is already deep in conversation with another guest. You leave the room, and [[head for the stairs]].
+
+story_id = 11</tw-passagedata><tw-passagedata pid="16" name="speak to the woman" tags="" position="525,1300.5" size="100,100">The older woman looks shaken and presses a lace handkerchief to her lips. She has a small pink hat on, with fine netting pinned to her grey bun. She speaks in a very soft voice and talks about the deceased, but sadly none of it is useful. However, just as she is about to shuffle away, she presses something small into your palm. It is a [[folded up piece of paper]].
+
+story_id = 10</tw-passagedata><tw-passagedata pid="17" name="enter the first bedroom" tags="" position="1200,724.5" size="100,100">The room is lavishly decorated in pink tones and delicate lace. You rely on your outdated notions of gender and assume that it is woman&#39;s bedroom, and head over to the dressing table to poke around (ostensibly for clues).
+Bonza! You find a beautiful necklace, with a pendant in the shape of an &quot;A&quot;. There is also a heavy silver hairbrush. On the handle is engraved the name &quot;Annabelle&quot;. You [[keep looking around the room]] or [[head into the hallway]].
+
+ story_id = 21</tw-passagedata><tw-passagedata pid="18" name="examine the stairs" tags="" position="1025,919.5" size="100,100">You look around the staircase area some more looking for clues. You notice that the blood actually looks a bit like a trail... that seems to head into the wall..? You can either ignore this and [[enter the first bedroom]] or [[tap on the wall]].
+
+story_id = 17</tw-passagedata><tw-passagedata pid="19" name="tap on the wall" tags="" position="1100,1049.5" size="100,100">It sounds oddly hollow. That means only one thing... A secret passageway! You start randomly pressing panels on the wall. You are quickly rewarded for your efforts when one springs open to reveal a dark tunnel within... Who knows where it leads? You can either [[go into the secret passage]] or back away and [[enter the first bedroom]].
+
+story_id = 18</tw-passagedata><tw-passagedata pid="20" name="go into the secret passage" tags="" position="1201,1199.5" size="100,100">Just inside the entrance to the secret passage you see a dark object. You can either [[examine the object]] or dart back out and [[enter the first bedroom]].
+
+story_id = 19
+</tw-passagedata><tw-passagedata pid="21" name="examine the object" tags="" position="1200,1324.5" size="100,100">As you lean down to examine the object (a pair of white butler&#39;s gloves?), you feel something shift in the darkness of the secret passage..... and then everything goes black.
+
+story_id = 20</tw-passagedata><tw-passagedata pid="22" name="speak to the man" tags="" position="854,1342.5" size="100,100">You are quickly engaged in a long and useless conversation about polo. Pretending to notice something interesting in the fireplace, you politely but firmly excuse yourself and head over to [[poke around in the smouldering fireplace]].
+
+story_id = 14</tw-passagedata><tw-passagedata pid="23" name="keep looking around the room" tags="" position="1199,600.5" size="100,100">You decide to keep poking around the room in case there are any more clues to be found. You acknowledge that at the moment you are just arbitrarily moving around the mansion and happening upon simplistic clues, but you push that thought aside as you open the drawer to the bedside table.
+Inside is a photograph, of a young red-haired woman standing next to a tall older gentleman with a smart-looking dinner jacket on. He has his hand on her shoulder, and she is wearing monogrammed riding clothes, and no jewellery. You pocket the photograph and [[keep looking around]] or [[head into the hallway]].
+
+story_id = 22</tw-passagedata><tw-passagedata pid="24" name="head into the hallway" tags="" position="1399,800.5" size="100,100">You emerge from the bedroom. Just as you enter the hallway, you hear a scream, coming from downstairs. At the same time, you hear a heavy crash in the second bedroom, just down the hall, away from the staircase.
+You stay up here and [[investigate the crash]] or [[run downstairs]].
+
+story_id = 24</tw-passagedata><tw-passagedata pid="25" name="keep looking around" tags="" position="1348,600.5" size="100,100">Underneath the bed you find a box. It looks like a jewellery gift box, and there is a small card attached. You open the card.
+To my Dearest, wear this and think of me always. With much love. J.
+Intrigued, you pocket the card and decide to [[head into the hallway]].
+
+story_id = 23</tw-passagedata><tw-passagedata pid="26" name="investigate the crash" tags="" position="1308,932.5" size="100,100">You race up the hallway towards to second bedroom. As you do, you notice a small door tucked in an alcove - the stairs to the attic. You can either [[keep going into the second bedroom]] or [[go into the attic]].
+
+story_id = 25</tw-passagedata><tw-passagedata pid="27" name="run downstairs" tags="" position="1573,899.5" size="100,100">You run downstairs in the direction of the scream - the ballroom. You burst through the extravagent double doors expecting to find another dead body.
+You do.
+A small, older lady with a pink hat lies in the center of the ballroom. There is a pool of blood around her head like a halo, and her small fists are clenched shut.
+You look around accusingly. Another murder, right under your nose!
+Some of the guests are all huddled in a group by the grand piano, eyes wide with fright.
+You either [[examine the old lady]] or [[look around the room for clues]].
+
+story_id = 29</tw-passagedata><tw-passagedata pid="28" name="go into the bathroom" tags="" position="1368,1199.5" size="100,100">Really? Okay then. You pursue the figure into the ensuite bathroom... or rather, you try to. Before you know quite what is happening, white gloved hands fasten around your neck and everything is fading... fading... and black. Just as you are about to black out, you blurrily look up into a dim, moustached face...
+
+story_id = 27</tw-passagedata><tw-passagedata pid="29" name="examine the old lady" tags="" position="1498,1050.5" size="100,100">You learn closer to the poor old love. She has a kind face. In one fist is clutched a delicate lace handkerchief. In the other, a crumpled up piece of paper. You gently pry it from her grasp - it is what looks like a formal resignation letter, and it is signed with the name &quot;John&quot;. It is addressed to the now deceased owner of the house. You decide to [[look around the room for clues]].
+
+story_id = 30</tw-passagedata><tw-passagedata pid="30" name="look around the room for clues" tags="" position="1648,1050.5" size="100,100">It&#39;s not long before you stumble upon the wooden panel in the wall, cracked open slightly. You gently pry it back, to reveal the gaping hole of a secret passageway hidden behind it. But where does it lead? Apprehensive, you aren&#39;t sure whether to head into the dark unknown or backtrack and investigate another area of the house for this audacious murderer. You look behind you, but the guests have all gone back to the sitting room. Do you [[head into the secret passage]] or [[look in the conservatory]]?
+
+story_id = 31</tw-passagedata><tw-passagedata pid="31" name="head into the secret passage" tags="" position="1573,1200.5" size="100,100">You head into the secret passage and gently close the panel behind you. Luckily, you have a small torch with you, which you light as you make your way forward. Outside, the storm is still howling. You begin to turn the events over in your mind, and just as you are coming to a realisation, you reach a small alcove area in the tunnel - someone&#39;s secret hideout. Here there is a small chair and table with a lamp on it - you use some matches to light the lamp so you can see better. On the table is a pair of folded round eyeglasses, a small moustache comb and a pair of bloodstained white gloves. The walls of the alcove are plastered with bits of paper - a map of the house, what looks to be a work roster with the name &quot;J. Atkins&quot; at the top, and several photographs of a red-haired woman.
+Do you [[head back to the entrance]] to call the police, or [[keep going down the tunnel]]?
+
+story_id = 34</tw-passagedata><tw-passagedata pid="32" name="look in the conservatory" tags="" position="1724,1200.5" size="100,100">You enter the conservatory with apprehension, but there is nothing but a dark, glass-walled room - empty. You decide to take a look around anyway.
+It&#39;s not long before you find it. A long, thin letter opener, hidden in a pot plant. As the rain lashes the roof of the conservatory, you reach down and grasp the handle. You are just examining the engraved initials (&quot;J.A&quot;) when someone clears their throat behind you. You whip around and are confronted with a tall man in round glasses, a neat moustache, and a murderous glint in his eye. Your hand tightens around the letter opener as your instincts kick in.
+You quickly lash out with the letter opener, slashing his cheek and splashing blood on his butler&#39;s uniform. While he is stunned, you push him aside and run for the door. Once in the hallway, you block the door from the outside so he can&#39;t get out and [[head back to the entrance]] to call the police.
+
+story_id = 32</tw-passagedata><tw-passagedata pid="33" name="head back to the entrance" tags="" position="1498,1350.5" size="100,100">You quickly rush back to the entrance of the mansion and snatch up the black telephone, the murderer&#39;s name on the tip of your tongue. When you reach the phone and dial the police, what do you say?
+[[It was the red-haired woman]]
+[[Pink hat lady did it]]
+[[The butler did it]]
+
+story_id = 33</tw-passagedata><tw-passagedata pid="34" name="keep going down the tunnel" tags="" position="1648,1350.5" size="100,100">Despite your bad feeling, you head further into the dark tunnel. It&#39;s far too late when you realise that the tunnel is ending, and there is no exit. You hear the footsteps behind you, and you drop your torch just as the white-gloved hands wrap around your neck...
+
+story_id = 35</tw-passagedata><tw-passagedata pid="35" name="It was the red-haired woman" tags="" position="1348,1500.5" size="100,100">Just as you tell the police this nonsense theory, the line goes dead. Frantically trying for a dial tone, you are distracted as the butler comes up behind you...
+
+story_id = 36</tw-passagedata><tw-passagedata pid="36" name="Pink hat lady did it" tags="" position="1498,1499.5" size="100,100">Just as you tell the police this nonsense theory, the line goes dead. Frantically trying for a dial tone, you are distracted as the butler comes up behind you...
+
+story_id = 37</tw-passagedata><tw-passagedata pid="37" name="The butler did it" tags="" position="1648,1501.5" size="100,100">The police say they are sending a police car to the property just as the line goes dead (why police didn&#39;t come with you in the first place is irrelevant...). Quick on your feet, you spin around, face to face with John Atkins - the butler, Annabelle&#39;s lover, and two-time murderer. Why did he invite you here if it was his intention to murder others, and maybe you too?
+You barely have time to think about this though - you conk him on the head with the heavy telephone headset, breaking his eyeglasses. He topples over onto the foyer floor with a thud. The remaining guests run out from the sitting room where they have been enjoying port and brandy and trying to stay alive, and applaud your fine detective skills and extraordinary luck in solving this mystery.
+
+story_id = 38</tw-passagedata><tw-passagedata pid="38" name="keep going into the second bedroom" tags="" position="1335,1070.5" size="100,100">Just as you fling the door open, you catch a glimpse of a figure, dressed in black and white, darting into the adjoined bathroom. You see a large vase on the ground, and inside the broken ceramic pieces is nestled a small key. You can either pursue the figure and [[go into the bathroom]] or hightail it out of there and [[run downstairs]].
+
+story_id = 26</tw-passagedata><tw-passagedata pid="39" name="go into the attic" tags="" position="1724,823.5" size="100,100">You open the creaky door and climb up the rickety, narrow stairs. You step into the dusty attic. The door slams behind you, and the lock clicks shut.
+You spin around frantically. As you do, you notice something in the corner... it looks like... but it can&#39;t be?
+It&#39;s a dead body, but it isn&#39;t a nice fresh one. This one is old, in both senses of the word. The fellow has thinning grey hair and portly middle. He is wearing a butler&#39;s uniform.

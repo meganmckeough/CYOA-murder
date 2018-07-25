@@ -68,8 +68,9 @@ get '/enter' do
 	erb :enter
 end
 
-get '/segments' do
+get '/segments/:story_id' do
 	@character = Character.order(:created_at).last
+	@segment = Segment.find_by(story_id: params[:story_id])
 	erb :segments
 end
 
