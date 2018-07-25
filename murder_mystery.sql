@@ -24,3 +24,13 @@ ALTER TABLE characters ADD created_at TIMESTAMP;
 ALTER TABLE characters DROP created_at;
 
 ALTER TABLE characters ADD created_at TIMESTAMP NOT NULL DEFAULT NOW();
+
+CREATE TABLE segments (
+	id SERIAL4 PRIMARY KEY,
+	story_id VARCHAR(100),
+	content TEXT,
+	options TEXT
+);
+
+
+INSERT INTO segments (story_id, content, options) values ('1', 'test content 1', );
