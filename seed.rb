@@ -27,26 +27,26 @@ require_relative 'models/segment'
 # Segment.create story_id: 13, content: 'Great, you\'ve further disrupted the guests\' already strange evening by making a racket. An older gentleman approaches you as you are tipping the contents of the last drawer onto the ground. You can either let him approach, or push him aside, exit and head for the stairs.', options: { 'Talk to the man.' => 14, 'Make a break for it.' => 16 }
 # Segment.create story_id: 14, content: 'You are quickly engaged in a long and useless conversation about polo. Pretending to notice something interesting in the fireplace, you politely but firmly excuse yourself and beeline for the fireplace.', options: { 'Poke around in the smouldering fireplace.' => 15 }
 # Segment.create story_id: 15, content: 'With a faceful of dust, you emerge triumphant. There is a partially burned piece of paper in the fireplace - the remains of a letter. It is mostly burned, but you can see one word - that reads "Annabelle". You pocket the letter discreetly and exit the sitting room, leaving the guests milling about in a fitful state.', options: { 'You head for the stairs.' => 16 }
-Segment.create story_id: 16, content: 'With the chandelier towering above your head, you ascend the grand staircase to look upstairs. As you do, something catches your eye - several drops of blood on one of the stairs. You lean in close. Odd. The blood is still fresh...', options: { 'Ignore and enter the first bedroom.' => 21, 'Examine the stairs more.' => 17 }
-Segment.create story_id: 17, content: 'You look around the staircase area some more looking for clues. You notice that the blood actually looks a bit like a trail... that seems to head into the wall...?', options: { 'Ignore it, leave the stairs and enter the first bedroom.' => 21, 'Tap on the wall.' => 18 } 
-Segment.create story_id: 18, content: 'It sounds oddly hollow. That means only one thing... A secret passageway! You start randomly pressing panels on the wall. You are quickly rewarded for your efforts when one springs open to reveal a dark tunnel within... Who knows where it leads?', options: {'Go into the secret passage, obviously.' => 19, 'Back away and enter the first bedroom.' => 21 }
-Segment.create story_id: 19, content: 'You\'re in the tunnel. You don\'t have a great feeling about this. Just inside the entrance to the secret passage you see a dark object...', options: { 'Examine the object.' => 20, 'Dart back out and enter the first bedroom.' => 21 }
-Segment.create story_id: 20, content: 'As you lean down to examine the object (a pair of white butler\'s gloves?), you feel something shift in the darkness of the secret passage..... and then everything goes black.'
-Segment.create story_id: 21, content: 'The room is lavishly decorated in pink tones and delicate lace. You rely on your outdated notions of gender and assume that it is woman\'s bedroom, and head over to the dressing table to poke around (ostensibly for clues). Bonza! You find a beautiful necklace, with a pendant in the shape of an "A". There is also a heavy silver hairbrush. On the handle is engraved the name "Annabelle".', options: { 'You keep looking around the room.' => 22, 'Head into the hallway.' => 24 }
-# Segment.create story_id: 22, 
-# Segment.create story_id: 23,
-# Segment.create story_id: 24,
-# Segment.create story_id: 25,
-# Segment.create story_id: 26,
-# Segment.create story_id: 27,
-# Segment.create story_id: 28,
-# Segment.create story_id: 29,
-# Segment.create story_id: 30,
-# Segment.create story_id: 31, 
-# Segment.create story_id: 32,
-# Segment.create story_id: 33,
-# Segment.create story_id: 34,
-# Segment.create story_id: 35,
-# Segment.create story_id: 36,
-# Segment.create story_id: 37,
-# Segment.create story_id: 38,
+# Segment.create story_id: 16, content: 'With the chandelier towering above your head, you ascend the grand staircase to look upstairs. As you do, something catches your eye - several drops of blood on one of the stairs. You lean in close. Odd. The blood is still fresh...', options: { 'Ignore and enter the first bedroom.' => 21, 'Examine the stairs more.' => 17 }
+# Segment.create story_id: 17, content: 'You look around the staircase area some more looking for clues. You notice that the blood actually looks a bit like a trail... that seems to head into the wall...?', options: { 'Ignore it, leave the stairs and enter the first bedroom.' => 21, 'Tap on the wall.' => 18 } 
+# Segment.create story_id: 18, content: 'It sounds oddly hollow. That means only one thing... A secret passageway! You start randomly pressing panels on the wall. You are quickly rewarded for your efforts when one springs open to reveal a dark tunnel within... Who knows where it leads?', options: {'Go into the secret passage, obviously.' => 19, 'Back away and enter the first bedroom.' => 21 }
+# Segment.create story_id: 19, content: 'You\'re in the tunnel. You don\'t have a great feeling about this. Just inside the entrance to the secret passage you see a dark object...', options: { 'Examine the object.' => 20, 'Dart back out and enter the first bedroom.' => 21 }
+# Segment.create story_id: 20, content: 'As you lean down to examine the object (a pair of white butler\'s gloves?), you feel something shift in the darkness of the secret passage..... and then everything goes black.'
+# Segment.create story_id: 21, content: 'The room is lavishly decorated in pink tones and delicate lace. You rely on your outdated notions of gender and assume that it is woman\'s bedroom, and head over to the dressing table to poke around (ostensibly for clues). Bonza! You find a beautiful necklace, with a pendant in the shape of an "A". There is also a heavy silver hairbrush. On the handle is engraved the name "Annabelle".', options: { 'You keep looking around the room.' => 22, 'Head into the hallway.' => 24 }
+Segment.create story_id: 22, 
+Segment.create story_id: 23,
+Segment.create story_id: 24,
+Segment.create story_id: 25,
+Segment.create story_id: 26,
+Segment.create story_id: 27,
+Segment.create story_id: 28,
+Segment.create story_id: 29,
+Segment.create story_id: 30,
+Segment.create story_id: 31, 
+Segment.create story_id: 32,
+Segment.create story_id: 33,
+Segment.create story_id: 34,
+Segment.create story_id: 35,
+Segment.create story_id: 36,
+Segment.create story_id: 37,
+Segment.create story_id: 38,

@@ -19,7 +19,7 @@ body {
 }*/
 
 main {
-	height: 65vh;
+	height: 60vh;
 }
 
 header {
@@ -45,8 +45,14 @@ nav {
 	margin: 150px 100px;
 }
 
-.about a {
+.about a,
+.login-form a,
+footer a {
 	text-decoration: underline;
+}
+
+footer a {
+	color:  #010D18;
 }
 
 .about a:hover {
@@ -75,10 +81,6 @@ nav {
 	width: 40%;
 	margin: 0 auto;
 	padding: 40px;
-}
-
-.login-form a {
-	text-decoration: underline;
 }
 
 .enter {
