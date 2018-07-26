@@ -5,9 +5,9 @@
 	</nav>	
 </section>
 
-Thank you for playing <%= current_user.name %>!
+<h2>Thank you for playing <%= current_user.name %>!</h2>
 
-Your character, Detective <%= @character.name %>, <%= @ending.content %>
+<div>Your character, Detective <%= @character.name %>, <%= @ending.content %></div>
 
 <form action="/ending/<%= @segment.story_id%>/<%= @character.id %>/edit" method="post">
 	<input type="hidden" name="_method" value="put">

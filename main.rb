@@ -53,6 +53,7 @@ post '/register/new' do
 end
 
 post '/character/new' do
+	redirect '/login' unless logged_in?
 	character = Character.new
 	character.name = params[:name]
 	character.save
@@ -60,16 +61,19 @@ post '/character/new' do
 end
 
 get '/character/edit' do
+	redirect '/login' unless logged_in?
 	@character = Character.order(:created_at).last
 	erb :background
 end
 
 get '/enter' do
+	redirect '/login' unless logged_in?
 	@character = Character.order(:created_at).last
 	erb :enter
 end
 
 get '/segments/ending/:story_id' do
+	redirect '/login' unless logged_in?
 	@segment = Segment.find_by(story_id: params[:story_id]) 
 	@character = Character.order(:created_at).last
 	@ending = Ending.find_by(story_id: params[:story_id])
@@ -77,17 +81,20 @@ get '/segments/ending/:story_id' do
 end
 
 get '/scores' do
+	redirect '/login' unless logged_in?
 	@characters = Character.all
 	erb :scores
 end
 
 get '/segments/:story_id' do
+	redirect '/login' unless logged_in?
 	@character = Character.order(:created_at).last
 	@segment = Segment.find_by(story_id: params[:story_id])
 	erb :segments
 end
 
 put '/ending/:story_id/:id/edit' do 
+	redirect '/login' unless logged_in?
 	character = Character.find(params[:id])
 	ending = Ending.find_by(story_id: params[:story_id])
 	character.ending = ending.content
@@ -96,6 +103,7 @@ put '/ending/:story_id/:id/edit' do
 end
 
 put '/character/:id/edit' do
+	redirect '/login' unless logged_in?
 	character = Character.find(params[:id])
 	character.background = params[:background]
 	character.save
@@ -103,6 +111,7 @@ put '/character/:id/edit' do
 end
 
 post '/session' do
+	redirect '/login' unless logged_in?
 	user = User.find_by(email: params[:email])
 	if user && user.authenticate(params[:password])
  		session[:user_id] = user.id
@@ -113,6 +122,7 @@ post '/session' do
 end
 
 delete '/session' do
+	redirect '/login' unless logged_in?
 	session[:user_id] = nil
 	redirect '/'
 end

@@ -5,4 +5,13 @@
 	</nav>	
 </section>
 
-<%= %>
+<h1>Leaderboard History</h1>
+
+<% @characters.each do |character| %>
+	<div>
+		<%= current_user.name %> finished as Detective <%= character.name %>, who <%= character.ending %>
+	</div>	
+<% end %>
+
+<a href="/">Try again!</a>
+
