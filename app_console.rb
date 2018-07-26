@@ -7,4 +7,4 @@ require_relative 'models/ending'
 require_relative 'models/score'
 require_relative 'models/user_character'
 
-binding.pry
+# binding.pry

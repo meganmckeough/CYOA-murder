@@ -1,4 +1,4 @@
-require 'sinatra/reloader'    
+# require 'sinatra/reloader'    
 require 'sinatra'
 require 'pg'
 require 'pry'
