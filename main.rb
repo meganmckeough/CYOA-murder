@@ -8,6 +8,7 @@ require_relative 'db_config'
 require_relative 'models/user'
 require_relative 'models/character'
 require_relative 'models/segment'
+require_relative 'models/ending'
 
 get '/login' do
 	erb :login
@@ -69,7 +70,18 @@ get '/enter' do
 end
 
 get '/segments/ending/:story_id' do
+	@character = Character.order(:created_at).last
+	@segment = Segment.find_by(story_id: params[:story_id])
 	erb :ending
+end
+
+get '/scores' do
+	erb :scores
+end
+
+put '/ending/:story_id/:id/edit' do 
+	character = Character.find(params[:id])
+	redirect "/scores"
 end
 
 get '/segments/:story_id' do

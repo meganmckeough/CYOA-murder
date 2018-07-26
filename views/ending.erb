@@ -1,0 +1,7 @@
+You ended at story_id <%= @segment.story_id %>
+Your name is <%= @character.name %>
+
+<form action="/ending/<%= @segment.story_id %>/<%= @character.id %>/edit" method="post">
+	<input type="hidden" name="_method" value="put">
+	<button>Go to leaderboard.</button>
+</form>

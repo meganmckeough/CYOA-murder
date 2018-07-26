@@ -1,6 +1,7 @@
 require 'active_record'
 require_relative 'db_config'
 require_relative 'models/segment'
+require_relative 'models/ending'
 
 # Segment.create story_id: 1, content: 'Sample segment text 1', options: { 'potato' => 2 }
 # Segment.create story_id: 2, content: 'Potato segment text 2', options: { 'tomato' => 3, 'lettuce' => 4}
@@ -53,13 +54,22 @@ require_relative 'models/segment'
 # Segment.create story_id: 38, content: 'The police say they are sending a police car to the property just as the line goes dead (why police didn\'t come with you in the first place is irrelevant...). Quick on your feet, you spin around, face to face with John Atkins - the butler, Annabelle\'s lover, and two-time murderer. Why did he invite you here if it was his intention to murder others, and maybe you too? You barely have time to think about this though - you conk him on the head with the heavy telephone headset, breaking his eyeglasses. He topples over onto the foyer floor with a thud. The remaining guests run out from the sitting room where they have been enjoying port and brandy and trying to stay alive, and applaud your fine detective skills and extraordinary luck in solving this mystery.'
 
 
-Segment.find_by(story_id: 8).update(options: {'THE END' => 'ending/8'})
-Segment.find_by(story_id: 32).update(options: {'THE END' => 'ending/32'})
-Segment.find_by(story_id: 20).update(options: {'THE END' => 'ending/20'})
-Segment.find_by(story_id: 27).update(options: {'THE END' => 'ending/27'})
-Segment.find_by(story_id: 28).update(options: {'THE END' => 'ending/28'})
-Segment.find_by(story_id: 35).update(options: {'THE END' => 'ending/35'})
-Segment.find_by(story_id: 36).update(options: {'THE END' => 'ending/36'})
-Segment.find_by(story_id: 37).update(options: {'THE END' => 'ending/37'})
-Segment.find_by(story_id: 38).update(options: {'THE END' => 'ending/38'})
+# Segment.find_by(story_id: 8).update(options: {'THE END' => 'ending/8'})
+# Segment.find_by(story_id: 32).update(options: {'THE END' => 'ending/32'})
+# Segment.find_by(story_id: 20).update(options: {'THE END' => 'ending/20'})
+# Segment.find_by(story_id: 27).update(options: {'THE END' => 'ending/27'})
+# Segment.find_by(story_id: 28).update(options: {'THE END' => 'ending/28'})
+# Segment.find_by(story_id: 35).update(options: {'THE END' => 'ending/35'})
+# Segment.find_by(story_id: 36).update(options: {'THE END' => 'ending/36'})
+# Segment.find_by(story_id: 37).update(options: {'THE END' => 'ending/37'})
+# Segment.find_by(story_id: 38).update(options: {'THE END' => 'ending/38'})
 
+Ending.create story_id: 8, name: 'left early', content: 'took off without solving the crime, and got a beer.'
+Ending.create story_id: 32, name: 'conservatory', content: 'single-handedly took down the murderer without hesitation (or particular skill).'
+Ending.create story_id: 20, name: 'first tunnel', content: 'was the victim of curiosity and a dark tunnnel.'
+Ending.create story_id: 27, name: 'bathroom', content: 'was cornered in the water closet and met a messy end.'
+Ending.create story_id: 28, name: 'attic', content: 'ascended to their doom in the attic... and discovered a grim secret?'
+Ending.create story_id: 35, name: 'second tunnel', content: 'didn\'t know when to turn back, or give up.' 
+Ending.create story_id: 36, name: 'red', content: 'had a foolish idea about who the murderer was.'
+Ending.create story_id: 37, name: 'pink', content: 'had an exceptionally foolish ideas about who the murderer was.'
+Ending.create story_id: 28, name: 'solved', content: 'solved the murder, called the police, received praise and got a good night\'s sleep.'
