@@ -25,13 +25,14 @@
 <div class="scores">
 	<h1>Leaderboard History</h1>
 	<h3>Who survived and who perished?</h2>
-<% @characters.each do |character| %>
-	<p>
-		<span><%= current_user.name %></span> finished as Detective <%= character.name %>, who <%= character.ending %>
-	</p>	
-<% end %>
+	
+	<% @characters.each do |character| %>
+		<p>
+			<span><%= current_user.name %></span> finished as Detective <%= character.name %>, who <%= character.ending %>
+		</p>	
+	<% end %>
 </div>
 
-<a href="/">Try again!</a>
+<a class="restart" href="/">Try again!</a>
 
 

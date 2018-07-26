@@ -11,7 +11,7 @@ body {
 	font-size: 1.2em;
 	margin: 2em auto 0;
 	width: 70%;
-	padding: 20px;
+	padding: 1.2em;
 	background-color: white;
 	color: #010D18;
 }
@@ -44,7 +44,7 @@ nav {
 
 .about {
 	text-align: center;
-	margin: 150px 100px;
+	margin: 4em;
 }
 
 .about a,
@@ -83,7 +83,7 @@ footer a {
 	flex-direction: column;
 	width: 40%;
 	margin: 0 auto;
-	padding: 40px;
+	padding: 2.2em;
 }
 
 .enter {
@@ -110,10 +110,21 @@ footer a {
 	margin-left: 2em;
 }
 
+.restart {
+	display: block;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
 .scores h1, h3 {
 	text-align: center;
 }
 
+.scores h1 {
+	letter-spacing: 7px;
+}
 
 .character div,
 .background {
@@ -187,3 +198,12 @@ footer {
 }
 
 
+@media only screen and (max-width: 600px) {
+	body {
+		font-size: 30px;
+	}
+
+	footer {
+		display: none;
+	}
+}
