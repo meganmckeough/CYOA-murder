@@ -8,22 +8,6 @@
 </head>
 <body>
 
-	<% if logged_in? == false %>
-		<div class="login">
-			<a href="/login">Login.</a>
-			<a href="/register">Create a new account.</a>
-		</div>
-	<% end %>
-
-	<% if logged_in? %>
-		<div class="logged-in">
-			<form action="/session" method="post">
-		  		<input type="hidden" name="_method" value="delete">
-		  		Currently investigating as <%= current_user.name %>
-		  		<button>Logout</button>
-		  	</form>
-		  </div>
-  	<% end %>
   
   <%= yield %>
 

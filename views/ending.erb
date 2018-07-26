@@ -5,11 +5,13 @@
 	</nav>	
 </section>
 
-<h2>Thank you for playing <%= current_user.name %>!</h2>
+<div class="end story-text">
+	<h2>Thank you for playing <%= current_user.name %>!</h2>
+	<p>Your character, <span>Detective <%= @character.name %></span>, <%= @ending.content %></p>
+	<p>Feel free to check out the leaderboard and then try again.</p>
+</div>
 
-<div>Your character, Detective <%= @character.name %>, <%= @ending.content %></div>
-
-<form action="/ending/<%= @segment.story_id%>/<%= @character.id %>/edit" method="post">
-	<input type="hidden" name="_method" value="put">
+<form class="end-button" action="/ending/<%= @segment.story_id%>/<%= @character.id %>/edit" method="post">
+<input type="hidden" name="_method" value="put">
 	<button>Go to the leaderboard.</button>
 </form>

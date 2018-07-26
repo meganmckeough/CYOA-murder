@@ -1,3 +1,20 @@
+<% if logged_in? == false %>
+	<div class="login">
+		<a href="/login">Login.</a>
+		<a href="/register">Create a new account.</a>
+	</div>
+<% end %>
+
+<% if logged_in? %>
+	<div class="logged-in">
+		<form action="/session" method="post">
+	  		<input type="hidden" name="_method" value="delete">
+	  		Currently investigating as <%= current_user.name %>
+	  		<button>Logout</button>
+	  	</form>
+	</div>
+<% end %>
+
 <section class="mini-header">
 	<nav>
 		<a href="/about">About.</a>
@@ -9,7 +26,7 @@
 </header>
 
 <main>
-	<p class="intro story-text">It is a dark and stormy night. You have come to this huge, forbidding mansion on a night like this to solve a murder, of course.</p>
+	<p class="story-text">It is a dark and stormy night. You have come to this huge, forbidding mansion on a night like this to solve a murder, of course.</p>
 
 	<div class="large-button">
 		<a href="/character">Create your character to begin.</a>

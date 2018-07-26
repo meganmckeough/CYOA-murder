@@ -1,3 +1,20 @@
+<% if logged_in? == false %>
+	<div class="login">
+		<a href="/login">Login.</a>
+		<a href="/register">Create a new account.</a>
+	</div>
+<% end %>
+
+<% if logged_in? %>
+	<div class="logged-in">
+		<form action="/session" method="post">
+	  		<input type="hidden" name="_method" value="delete">
+	  		Currently investigating as <%= current_user.name %>
+	  		<button>Logout</button>
+	  	</form>
+	</div>
+<% end %>
+
 <section class="mini-header">
 	<nav>
 		<a href="/about">About.</a>
@@ -5,13 +22,16 @@
 	</nav>	
 </section>
 
-<h1>Leaderboard History</h1>
-
+<div class="scores">
+	<h1>Leaderboard History</h1>
+	<h3>Who survived and who perished?</h2>
 <% @characters.each do |character| %>
-	<div>
-		<%= current_user.name %> finished as Detective <%= character.name %>, who <%= character.ending %>
-	</div>	
+	<p>
+		<span><%= current_user.name %></span> finished as Detective <%= character.name %>, who <%= character.ending %>
+	</p>	
 <% end %>
+</div>
 
 <a href="/">Try again!</a>
+
 
