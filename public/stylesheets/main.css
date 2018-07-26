@@ -42,9 +42,21 @@ nav {
 	text-align: right;
 }
 
+.disclaimer {
+	text-align: center;
+	font-size: 0.7em;
+}
+
+.disclaimer span {
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+
 .about {
 	text-align: center;
 	margin: 4em;
+	line-height: 1.5em;
 }
 
 .about a,
@@ -153,6 +165,7 @@ footer a {
 	width: 50%;
 	margin: 0 auto;
 }
+
 
 label {
 	margin: 20px;
