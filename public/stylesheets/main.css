@@ -27,7 +27,7 @@ body {
 }
 
 main {
-	height: 60vh;
+	height: 58vh;
 }
 
 header {
@@ -72,6 +72,11 @@ footer a {
 	display: flex;
 	flex-direction: column;
 	text-align: right;
+}
+
+.login div {
+	display: flex;
+	justify-content: space-between;
 }
 
 .login-form,
