@@ -39,3 +39,6 @@ CREATE TABLE endings (
 	story_id VARCHAR(100),
 	name TEXT
 );
+
+ALTER TABLE endings
+  ADD content TEXT;

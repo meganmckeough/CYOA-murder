@@ -70,24 +70,29 @@ get '/enter' do
 end
 
 get '/segments/ending/:story_id' do
+	@segment = Segment.find_by(story_id: params[:story_id]) 
 	@character = Character.order(:created_at).last
-	@segment = Segment.find_by(story_id: params[:story_id])
+	@ending = Ending.find_by(story_id: params[:story_id])
 	erb :ending
 end
 
 get '/scores' do
+	@characters = Character.all
 	erb :scores
-end
-
-put '/ending/:story_id/:id/edit' do 
-	character = Character.find(params[:id])
-	redirect "/scores"
 end
 
 get '/segments/:story_id' do
 	@character = Character.order(:created_at).last
 	@segment = Segment.find_by(story_id: params[:story_id])
 	erb :segments
+end
+
+put '/ending/:story_id/:id/edit' do 
+	character = Character.find(params[:id])
+	ending = Ending.find_by(story_id: params[:story_id])
+	character.ending = ending.content
+	character.save
+	redirect "/scores"
 end
 
 put '/character/:id/edit' do

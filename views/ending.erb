@@ -1,7 +1,15 @@
-You ended at story_id <%= @segment.story_id %>
-Your name is <%= @character.name %>
+<section class="mini-header">
+	<nav>
+		<a href="/about">About.</a>
+		<a href="/">Home.</a>
+	</nav>	
+</section>
 
-<form action="/ending/<%= @segment.story_id %>/<%= @character.id %>/edit" method="post">
+Thank you for playing <%= current_user.name %>!
+
+Your character, Detective <%= @character.name %>, <%= @ending.content %>
+
+<form action="/ending/<%= @segment.story_id%>/<%= @character.id %>/edit" method="post">
 	<input type="hidden" name="_method" value="put">
-	<button>Go to leaderboard.</button>
+	<button>Go to the leaderboard.</button>
 </form>
