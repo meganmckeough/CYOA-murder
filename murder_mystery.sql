@@ -55,3 +55,6 @@ CREATE TABLE user_characters (
 );
 
 ALTER TABLE user_characters ADD created_at TIMESTAMP NOT NULL DEFAULT NOW();
+
+ALTER TABLE records   
+RENAME TO scores;  

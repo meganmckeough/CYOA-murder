@@ -76,11 +76,13 @@ require_relative 'models/ending'
 
 # Ending.find_by(story_id: 20).update(content: 'was the victim of curiosity and a dark tunnel.')
 
-Ending.find_by(story_id: 8).update(content: 'took off without solving the crime, and got a beer.')
-Ending.find_by(story_id: 20).update(content: 'was the victim of curiosity and mystery cliches.')
-Ending.find_by(story_id: 27).update(content: 'was cornered and met a messy end.')
-Ending.find_by(story_id: 28).update(content: 'ascended to their doom... and discovered a grim secret?')
-Ending.find_by(story_id: 35).update(content: 'didn\'t know when to turn back, or give up.')
-Ending.find_by(story_id: 36).update(content: 'had a foolish idea about who the murderer was.')
-Ending.find_by(story_id: 37).update(content: 'had an exceptionally foolish idea about who the murderer was.')
-Ending.find_by(story_id: 28).update(content: 'solved the murder, called the police, received praise and got a good night\'s sleep.')
+# Ending.find_by(story_id: 8).update(content: 'took off without solving the crime, and got a beer.')
+# Ending.find_by(story_id: 20).update(content: 'was the victim of curiosity and mystery cliches.')
+# Ending.find_by(story_id: 27).update(content: 'was cornered and met a messy end.')
+# Ending.find_by(story_id: 28).update(content: 'ascended to their doom... and discovered a grim secret?')
+# Ending.find_by(story_id: 35).update(content: 'didn\'t know when to turn back, or give up.')
+# Ending.find_by(story_id: 36).update(content: 'had a foolish idea about who the murderer was.')
+# Ending.find_by(story_id: 37).update(content: 'had an exceptionally foolish idea about who the murderer was.')
+# Ending.find_by(story_id: 28).update(content: 'solved the murder, called the police, received praise and got a good night\'s sleep.')
+
+# TABLE NOW CALLED SCORES

@@ -9,7 +9,7 @@ require_relative 'models/user'
 require_relative 'models/character'
 require_relative 'models/segment'
 require_relative 'models/ending'
-require_relative 'models/record'
+require_relative 'models/score'
 require_relative 'models/user_character'
 
 get '/login' do
@@ -92,7 +92,7 @@ end
 
 get '/scores' do
 	redirect '/login' unless logged_in?
-	@records = Record.all
+	@scores = Score.all
 	erb :scores
 end
 
@@ -111,9 +111,9 @@ put '/ending/:story_id/:id/edit' do
 	ending = Ending.find_by(story_id: params[:story_id])
 	character.ending = ending.content
 	character.save
-	record = Record.new
-	record.content = "#{current_user.name} finished as Detective #{ character.name }, who #{ character.ending }"
-	record.save
+	score = Score.new
+	score.content = "#{current_user.name} finished as Detective #{ character.name }, who #{ character.ending }"
+	score.save
 	redirect '/scores'
 end
 
