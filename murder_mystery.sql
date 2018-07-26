@@ -47,3 +47,11 @@ CREATE TABLE records (
 	id SERIAL4 PRIMARY KEY,
 	content TEXT
 );
+
+CREATE TABLE user_characters (
+	id SERIAL4 PRIMARY KEY,
+	user_id VARCHAR(100),
+	char_id VARCHAR(100)
+);
+
+ALTER TABLE user_characters ADD created_at TIMESTAMP NOT NULL DEFAULT NOW();

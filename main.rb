@@ -10,6 +10,7 @@ require_relative 'models/character'
 require_relative 'models/segment'
 require_relative 'models/ending'
 require_relative 'models/record'
+require_relative 'models/user_character'
 
 get '/login' do
 	erb :login
@@ -58,23 +59,33 @@ post '/character/new' do
 	character = Character.new
 	character.name = params[:name]
 	character.save
+	user_character = User_character.new
+	user_character.user_id = current_user.id
+	user_character.char_id = character.id
+	user_character.save
 	redirect '/character/edit'
 end
 
 get '/character/edit' do
-	@character = Character.order(:created_at).last
+	user_characters = User_character.where(:user_id == current_user.id).all
+	current_character = user_characters.order(:created_at).last
+	@character = Character.find(current_character.char_id)
 	erb :background
 end
 
 get '/enter' do
-	@character = Character.order(:created_at).last
+	user_characters = User_character.where(:user_id == current_user.id).all
+	current_character = user_characters.order(:created_at).last
+	@character = Character.find(current_character.char_id)
 	erb :enter
 end
 
 get '/segments/ending/:story_id' do
 	redirect '/login' unless logged_in?
 	@segment = Segment.find_by(story_id: params[:story_id]) 
-	@character = Character.order(:created_at).last
+	user_characters = User_character.where(:user_id == current_user.id).all
+	current_character = user_characters.order(:created_at).last
+	@character = Character.find(current_character.char_id)
 	@ending = Ending.find_by(story_id: params[:story_id])
 	erb :ending
 end
@@ -87,7 +98,9 @@ end
 
 get '/segments/:story_id' do
 	redirect '/login' unless logged_in?
-	@character = Character.order(:created_at).last
+	user_characters = User_character.where(:user_id == current_user.id).all
+	current_character = user_characters.order(:created_at).last
+	@character = Character.find(current_character.char_id)
 	@segment = Segment.find_by(story_id: params[:story_id])
 	erb :segments
 end
