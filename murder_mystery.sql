@@ -42,3 +42,4 @@ CREATE TABLE endings (
 
 ALTER TABLE endings
   ADD content TEXT;
+
