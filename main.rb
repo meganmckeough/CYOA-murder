@@ -61,13 +61,11 @@ post '/character/new' do
 end
 
 get '/character/edit' do
-	redirect '/login' unless logged_in?
 	@character = Character.order(:created_at).last
 	erb :background
 end
 
 get '/enter' do
-	redirect '/login' unless logged_in?
 	@character = Character.order(:created_at).last
 	erb :enter
 end
@@ -111,7 +109,6 @@ put '/character/:id/edit' do
 end
 
 post '/session' do
-	redirect '/login' unless logged_in?
 	user = User.find_by(email: params[:email])
 	if user && user.authenticate(params[:password])
  		session[:user_id] = user.id
@@ -122,7 +119,6 @@ post '/session' do
 end
 
 delete '/session' do
-	redirect '/login' unless logged_in?
 	session[:user_id] = nil
 	redirect '/'
 end
