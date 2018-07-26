@@ -43,3 +43,7 @@ CREATE TABLE endings (
 ALTER TABLE endings
   ADD content TEXT;
 
+CREATE TABLE records (
+	id SERIAL4 PRIMARY KEY,
+	content TEXT
+);

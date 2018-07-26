@@ -30,10 +30,8 @@
 	<h1>Leaderboard History</h1>
 	<h3>Who survived and who perished?</h2>
 	
-	<% @characters.each do |character| %>
-		<p>
-			<span><%= current_user.name %></span> finished as Detective <%= character.name %>, who <%= character.ending %>
-		</p>	
+	<% @records.each do |record| %>
+		<p><%= record.content %></p>	
 	<% end %>
 </div>
 

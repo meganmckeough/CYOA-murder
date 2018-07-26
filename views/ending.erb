@@ -2,7 +2,6 @@
 	<button class="storm">pause the storm</button>
 	<nav>
 		<a href="/about">About.</a>
-		<a href="/">Home.</a>
 	</nav>	
 </section>
 
@@ -14,5 +13,5 @@
 
 <form class="end-button" action="/ending/<%= @segment.story_id%>/<%= @character.id %>/edit" method="post">
 <input type="hidden" name="_method" value="put">
-	<button>Go to the leaderboard.</button>
+	<button>Add your ending to the leaderboard!</button>
 </form>

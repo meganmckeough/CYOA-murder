@@ -64,12 +64,23 @@ require_relative 'models/ending'
 # Segment.find_by(story_id: 37).update(options: {'THE END' => 'ending/37'})
 # Segment.find_by(story_id: 38).update(options: {'THE END' => 'ending/38'})
 
-Ending.create story_id: 8, name: 'left early', content: 'took off without solving the crime, and got a beer.'
-Ending.create story_id: 32, name: 'conservatory', content: 'single-handedly took down the murderer without hesitation (or particular skill).'
-Ending.create story_id: 20, name: 'first tunnel', content: 'was the victim of curiosity and a dark tunnnel.'
-Ending.create story_id: 27, name: 'bathroom', content: 'was cornered in the water closet and met a messy end.'
-Ending.create story_id: 28, name: 'attic', content: 'ascended to their doom in the attic... and discovered a grim secret?'
-Ending.create story_id: 35, name: 'second tunnel', content: 'didn\'t know when to turn back, or give up.' 
-Ending.create story_id: 36, name: 'red', content: 'had a foolish idea about who the murderer was.'
-Ending.create story_id: 37, name: 'pink', content: 'had an exceptionally foolish ideas about who the murderer was.'
-Ending.create story_id: 28, name: 'solved', content: 'solved the murder, called the police, received praise and got a good night\'s sleep.'
+# Ending.create story_id: 8, name: 'left early', content: 'took off without solving the crime, and got a beer.'
+# Ending.create story_id: 32, name: 'conservatory', content: 'single-handedly took down the murderer without hesitation (or particular skill).'
+# Ending.create story_id: 20, name: 'first tunnel', content: 'was the victim of curiosity and a dark tunnnel.'
+# Ending.create story_id: 27, name: 'bathroom', content: 'was cornered in the water closet and met a messy end.'
+# Ending.create story_id: 28, name: 'attic', content: 'ascended to their doom in the attic... and discovered a grim secret?'
+# Ending.create story_id: 35, name: 'second tunnel', content: 'didn\'t know when to turn back, or give up.' 
+# Ending.create story_id: 36, name: 'red', content: 'had a foolish idea about who the murderer was.'
+# Ending.create story_id: 37, name: 'pink', content: 'had an exceptionally foolish ideas about who the murderer was.'
+# Ending.create story_id: 28, name: 'solved', content: 'solved the murder, called the police, received praise and got a good night\'s sleep.'
+
+# Ending.find_by(story_id: 20).update(content: 'was the victim of curiosity and a dark tunnel.')
+
+Ending.find_by(story_id: 8).update(content: 'took off without solving the crime, and got a beer.')
+Ending.find_by(story_id: 20).update(content: 'was the victim of curiosity and mystery cliches.')
+Ending.find_by(story_id: 27).update(content: 'was cornered and met a messy end.')
+Ending.find_by(story_id: 28).update(content: 'ascended to their doom... and discovered a grim secret?')
+Ending.find_by(story_id: 35).update(content: 'didn\'t know when to turn back, or give up.')
+Ending.find_by(story_id: 36).update(content: 'had a foolish idea about who the murderer was.')
+Ending.find_by(story_id: 37).update(content: 'had an exceptionally foolish idea about who the murderer was.')
+Ending.find_by(story_id: 28).update(content: 'solved the murder, called the police, received praise and got a good night\'s sleep.')
