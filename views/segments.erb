@@ -1,19 +1,21 @@
 <% if logged_in? == false %>
 	<div class="login">
-		<button>pause the storm</button>
-		<a href="/login">Login.</a>
+		<div>
+			<button class="storm">pause the storm</button>
+			<a href="/login">Login.</a>
+		</div>
 		<a href="/register">Create a new account.</a>
 	</div>
 <% end %>
 
 <% if logged_in? %>
 	<div class="logged-in">
-		<button>pause the storm</button>
 		<form action="/session" method="post">
-	  		<input type="hidden" name="_method" value="delete">
+  		<input type="hidden" name="_method" value="delete">
 	  		Currently investigating as Detective <%= @character.name %>, <%= @character.background %>
 	  		<button>Logout</button>
 	  	</form>
+	  	<button class="storm">pause the storm</button>
 	</div>
 <% end %>
 

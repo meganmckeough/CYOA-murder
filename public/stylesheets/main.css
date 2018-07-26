@@ -68,6 +68,10 @@ footer a {
 	font-size: 0.7em;
 }
 
+.logged-in .storm {
+	text-align: right;
+}
+
 .login {
 	display: flex;
 	flex-direction: column;
