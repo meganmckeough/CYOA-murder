@@ -21,5 +21,8 @@ Big thanks to [Twine](http://twinery.org/) - which made the story planning proce
 * A postgreSQL database was used to store story segments (with story logic and options), characters created by users, scores, users and endings. Story segments are pulled from the database and displayed based on the option that is picked by the user on the previous story segment.
 * There are 9 possible endings, and a summary of the ending is displayed along with the user and character name on a leaderboard upon completion. Endings are also stored in a table, and on each completion a new record is added to the table for scores.
 
+### Bugs
+Leaderboard and character linkage currently glitching - being fixed! Sorry players!
+
 ### Coming soon
 Tidying up layout for mobile and other devices; adding additional stories and functionality that utilises the character chosen. Taking requests for any particular types of stories!
