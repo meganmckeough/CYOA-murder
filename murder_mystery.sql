@@ -48,6 +48,7 @@ CREATE TABLE records (
 	content TEXT
 );
 
+
 CREATE TABLE user_characters (
 	id SERIAL4 PRIMARY KEY,
 	user_id VARCHAR(100),
@@ -58,3 +59,7 @@ ALTER TABLE user_characters ADD created_at TIMESTAMP NOT NULL DEFAULT NOW();
 
 ALTER TABLE records   
 RENAME TO scores;  
+
+
+UPDATE scores SET content='Tom finished as Detective Niall Redmond, who was the victim of curiosity and mystery cliches.' WHERE id=16;
+UPDATE scores SET content='Sam finished as Detective Phryne Fisher, who was the victim of curiosity and mystery cliches.' WHERE id=15;
