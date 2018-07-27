@@ -122,7 +122,9 @@ end
 
 put '/character/:id/edit' do
 	redirect '/login' unless logged_in?
-	character = Character.find(params[:id])
+	user_characters = User_character.where(:user_id == current_user.id).all
+	current_character = user_characters.order(:created_at).last
+	character = Character.find(current_character.char_id)
 	character.background = params[:background]
 	character.save
 	redirect '/enter'
