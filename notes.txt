@@ -1,0 +1,5 @@
+pg_dump -Fc --no-acl --no-owner -h localhost -U Megan murder_mystery > db.dump
+
+https://github.com/meganmckeough/CYOA-murder/raw/master/db.dump
+
+heroku pg:backups:restore 'https://github.com/meganmckeough/CYOA-murder/raw/master/db.dump' DATABASE_URL

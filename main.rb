@@ -51,6 +51,7 @@ post '/register/new' do
 	user.email = params[:email]
 	user.password = params[:password]
 	user.save
+	session[:user_id] = user.id
 	redirect '/character'
 end
 
@@ -129,7 +130,7 @@ post '/session' do
 	user = User.find_by(email: params[:email])
 	if user && user.authenticate(params[:password])
  		session[:user_id] = user.id
- 		redirect '/'
+ 		redirect '/character'
 	else
 		erb :login
 	end

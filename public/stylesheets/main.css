@@ -14,6 +14,7 @@ body {
 	padding: 1.2em;
 	background-color: white;
 	color: #010D18;
+	animation: fadein 2s;
 }
 
 .options {
@@ -153,7 +154,7 @@ footer a {
 }
 
 .background p {
-	margin: 1em auto 0 ;
+	margin: 1em auto 0;
 	width: 50%;
 	font-family: 'Josefin Slab', serif;
 	text-align: left;
@@ -217,6 +218,15 @@ footer {
 	text-align: center;
 	padding: 10px;
 	font-size: 0.8em;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
 
 @media only screen and (max-width: 600px) {
