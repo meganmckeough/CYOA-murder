@@ -108,7 +108,9 @@ end
 
 put '/ending/:story_id/:id/edit' do 
 	redirect '/login' unless logged_in?
-	character = Character.find(params[:id])
+	user_characters = User_character.where(:user_id == current_user.id).all
+	current_character = user_characters.order(:created_at).last
+	character = Character.find(current_character.char_id)
 	ending = Ending.find_by(story_id: params[:story_id])
 	character.ending = ending.content
 	character.save

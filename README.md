@@ -5,7 +5,7 @@
 
 ### The story
 Enter the mansion and let your decisions take you on a journey... though you may not make it out alive! You play the story as one of four types of detective (further functionality with characters coming soon!). Try not to use the Back button. If you perish you can replay the story and discover one of the other many endings. Add your name and ending to the Leaderboard after each time you complete the story! 
-Written by me as well, there are further stories are coming soon. 
+Written by me, and there are further stories are coming soon. 
 
 ### The website
 This full-stack web app was made as the second project for the General Assembly Web Development Immersive course. The story is very simple as the app is designed to utilise relational databases and focus on the code - but more complex / interesting stories are hopefully in the pipeline! 
