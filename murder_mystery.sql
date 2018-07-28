@@ -63,3 +63,12 @@ RENAME TO scores;
 
 UPDATE scores SET content='Tom finished as Detective Niall Redmond, who was the victim of curiosity and mystery cliches.' WHERE id=16;
 UPDATE scores SET content='Sam finished as Detective Phryne Fisher, who was the victim of curiosity and mystery cliches.' WHERE id=15;
+
+UPDATE endings SET story_id='38' WHERE id=9;
+
+UPDATE scores SET content='swoopy finished as Detective Gump Lord, who was the victim of curiosity and mystery cliches.' WHERE id=33;
+UPDATE scores SET content='Julie finished as Detective Inspector Rex, who ascended to their doom... and discovered a grim secret?' WHERE id=31;
+UPDATE scores SET content='Dan finished as Detective Syndicated Inbox, who didnt know when to turn back, or give up.' WHERE id='28';
+UPDATE scores SET content='Melissa finished as Detective Jessica Jones, who was the victim of curiosity and mystery cliches.' WHERE id='26';
+UPDATE scores SET content='Dan finished as Detective Rhodia Teabox who took off without solving the crime, and got a beer.' WHERE id='23';
+UPDATE scores SET content='Dan finished as Detective Biro Stickynote who ascended to their doom... and discovered a grim secret?' WHERE id=21;
