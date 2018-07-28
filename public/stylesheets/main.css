@@ -154,6 +154,11 @@ footer a {
 	overflow: scroll;
 }
 
+.scroll {
+	text-align: center;
+	font-size: 0.6em;
+}
+
 .character div,
 .background {
 	text-align: center;
