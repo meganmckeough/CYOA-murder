@@ -68,15 +68,13 @@ post '/character/new' do
 end
 
 get '/character/edit' do
-	user_characters = User_character.where(:user_id == current_user.id).all
-	current_character = user_characters.order(:created_at).last
+	current_character = User_character.order(id: :desc).find_by(user_id: current_user.id)
 	@character = Character.find(current_character.char_id)
 	erb :background
 end
 
 get '/enter' do
-	user_characters = User_character.where(:user_id == current_user.id).all
-	current_character = user_characters.order(:created_at).last
+	current_character = User_character.order(id: :desc).find_by(user_id: current_user.id)
 	@character = Character.find(current_character.char_id)
 	erb :enter
 end
@@ -84,8 +82,7 @@ end
 get '/segments/ending/:story_id' do
 	redirect '/login' unless logged_in?
 	@segment = Segment.find_by(story_id: params[:story_id]) 
-	user_characters = User_character.where(:user_id == current_user.id).all
-	current_character = user_characters.order(:created_at).last
+	current_character = User_character.order(id: :desc).find_by(user_id: current_user.id)
 	@character = Character.find(current_character.char_id)
 	@ending = Ending.find_by(story_id: params[:story_id])
 	erb :ending
@@ -93,14 +90,13 @@ end
 
 get '/scores' do
 	redirect '/login' unless logged_in?
-	@scores = Score.all
+	@scores = Score.all.order(id: :desc)
 	erb :scores
 end
 
 get '/segments/:story_id' do
 	redirect '/login' unless logged_in?
-	user_characters = User_character.where(:user_id == current_user.id).all
-	current_character = user_characters.order(:created_at).last
+	current_character = User_character.order(id: :desc).find_by(user_id: current_user.id)
 	@character = Character.find(current_character.char_id)
 	@segment = Segment.find_by(story_id: params[:story_id])
 	erb :segments
@@ -108,8 +104,7 @@ end
 
 put '/ending/:story_id/:id/edit' do 
 	redirect '/login' unless logged_in?
-	user_characters = User_character.where(:user_id == current_user.id).all
-	current_character = user_characters.order(:created_at).last
+	current_character = User_character.order(id: :desc).find_by(user_id: current_user.id)
 	character = Character.find(current_character.char_id)
 	ending = Ending.find_by(story_id: params[:story_id])
 	character.ending = ending.content
@@ -122,8 +117,7 @@ end
 
 put '/character/:id/edit' do
 	redirect '/login' unless logged_in?
-	user_characters = User_character.where(:user_id == current_user.id).all
-	current_character = user_characters.order(:created_at).last
+	current_character = User_character.order(id: :desc).find_by(user_id: current_user.id)
 	character = Character.find(current_character.char_id)
 	character.background = params[:background]
 	character.save

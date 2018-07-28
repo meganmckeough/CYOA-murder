@@ -29,10 +29,11 @@
 <div class="scores">
 	<h1>Leaderboard History</h1>
 	<h3>Who survived and who perished?</h2>
-	
-	<% @scores.each do |score| %>
-		<p><%= score.content %></p>	
-	<% end %>
+	<div class="score-list">
+		<% @scores.each do |score| %>
+			<p><%= score.content %></p>	
+		<% end %>
+	</div>
 </div>
 
 <a class="restart" href="/">Try again!</a>

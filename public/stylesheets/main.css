@@ -131,6 +131,7 @@ footer a {
 .scores p {
 	font-family: 'Josefin Slab', serif;
 	margin-left: 2em;
+	font-weight: 100;
 }
 
 .restart {
@@ -146,6 +147,11 @@ footer a {
 
 .scores h1 {
 	letter-spacing: 7px;
+}
+
+.score-list {
+	height: 50vh;
+	overflow: scroll;
 }
 
 .character div,
